@@ -1,6 +1,6 @@
-class Menu < ActiveRecord::Base
+class MenuItem < ActiveRecord::Base
   attr_accessible :name
-  has_many :menu_items
+  belongs_to :menu
 
   validates :name, :presence => true, :uniqueness => true
 end
