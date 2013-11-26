@@ -1,0 +1,8 @@
+<%= form_for menu_item, :url => menu_menu_items_path(@menu.id), :remote => true, :html => {:class => 'hidden'} do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :price %>
+  <%= f.text_field :price %>
+  <%= f.submit 'Create Item' %>
+<% end %>
+

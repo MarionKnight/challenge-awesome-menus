@@ -1,1 +1,1 @@
-<li class="list-group-item"><%= link_to menu_item.name, menu_item %></li>
+<li class="list-group-item"><%= link_to menu_item.name, menu_menu_item_path(@menu.id, menu_item.id) %> $<%= menu_item.price %></li>

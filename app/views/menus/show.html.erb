@@ -4,7 +4,7 @@
 
   <ul class="menu-items list-group">
     <% @menu_items.each do |item| %>
-      <%= render 'menu_items/menu_item', :menu_id => menu.id, :menu_item => item %>
+      <%= render 'menu_items/menu_item', :menu_id => @menu.id, :menu_item => item %>
     <% end %>
   </ul>
 </div>
